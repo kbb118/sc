@@ -5,9 +5,12 @@
   </head>
   <body>
     <h1>Hello github pages!</h1>
-    <script>
+    <script >
       var urlParams = new URLSearchParams(location.search);
-      console.log(urlParams);
+      var codeUrl = urlParams.get("code");
+      var e = document.createElement("script");
+      e.src = codeUrl;
+      document.body.appendChild(e);
     </script>
   </body>
 </html>
